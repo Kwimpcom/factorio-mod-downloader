@@ -300,10 +300,10 @@ def download_mod(packet, ver, filter=None):
 			if mirror != -1:
 				FALLBACK_MIRRORS[mirror][1] += 1
 
-			if i < len(urls):
-				raise
-			else:
+			if i < len(urls)-1:
 				continue
+			else:
+				raise
 	
 	if i != 0:
 		FALLBACK_MIRRORS.sort(key=lambda mirror: mirror[1])
