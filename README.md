@@ -25,6 +25,12 @@ To just use the TUI.
 
 # Using Browser Integration
 
+You need to first start the server in the background :
+
+```bash
+  python fmd.py start-server
+```
+
 In this situation, I decided to use an userscript instead of a whole extension since it's a hassle.
 You first need to use Tampermonkey or Violentmonkey or anything else to use the browser integration feature which you can get here:
 
