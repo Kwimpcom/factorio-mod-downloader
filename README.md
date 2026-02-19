@@ -25,9 +25,10 @@ To just use the TUI.
 
 # Using Browser Integration
 
-You first need to use Tampermonkey or Violentmonkey or anything else to use the browser integration feature which you can get here :
+You first need to use Tampermonkey or Violentmonkey or anything else to use the browser integration feature which you can get here:
 
-[Tampermonkey for Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
+[Tampermonkey for Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)<br>
+
 [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 
 After that, you can install the userscript for the browser integration from here :
