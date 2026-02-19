@@ -31,7 +31,7 @@ You need to first start the server in the background :
   python fmd.py start-server
 ```
 
-In this situation, I decided to use an userscript instead of a whole extension since it's a hassle.
+In this situation, I decided to use an userscript instead of a whole extension since it's a hassle.<br>
 You first need to use Tampermonkey or Violentmonkey or anything else to use the browser integration feature which you can get here:
 
 [Tampermonkey for Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)<br>
