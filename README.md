@@ -25,6 +25,7 @@ To just use the TUI.
 
 # Using Browser Integration
 
+In this situation, I decided to use an userscript instead of a whole extension since it's a hassle.
 You first need to use Tampermonkey or Violentmonkey or anything else to use the browser integration feature which you can get here:
 
 [Tampermonkey for Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)<br>
@@ -32,4 +33,9 @@ You first need to use Tampermonkey or Violentmonkey or anything else to use the 
 [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 
 After that, you can install the userscript for the browser integration from here:
+
+[factorio-mod-downloader-1.0.0.user.js](https://github.com/Kwimpcom/factorio-mod-downloader/raw/refs/heads/master/userscripts/factorio-mod-downloader-1.0.0.user.js)
+
+After installation you can just visit a mod's page or the search and see the "Portal Install" button.
+
 
