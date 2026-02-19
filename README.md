@@ -31,5 +31,5 @@ You first need to use Tampermonkey or Violentmonkey or anything else to use the 
 
 [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 
-After that, you can install the userscript for the browser integration from here :
+After that, you can install the userscript for the browser integration from here:
 
