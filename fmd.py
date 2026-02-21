@@ -19,6 +19,13 @@ from flask import Flask, jsonify, request as flask_request
 from flask_cors import CORS
 from werkzeug.serving import make_server
 
+IGNORED_MODS = {
+    "base",
+    "space-age",
+    "quality",
+    "elevated-rails"
+}
+
 MAX_RELEASES_DISPLAYED = 6
 MAX_WORDS_PER_LINE = 7
 
@@ -332,6 +339,11 @@ def parse_dep_code(code):
 def download_recursive_mod(mod_name, ver="latest", filter=lambda v: True, visited_set=None, min_delay=.05):
     visited_set = visited_set if visited_set is not None else dict()
     
+    # Add this check at the beginning
+    if mod_name in IGNORED_MODS:
+        cli.print(f"[bold yellow]Skipping ignored mod: {mod_name}[/bold yellow]")
+        return visited_set
+    
     if mod_name in visited_set:
         return visited_set
     visited_set[mod_name] = None
@@ -387,7 +399,7 @@ def download_recursive_mod(mod_name, ver="latest", filter=lambda v: True, visite
                 )
 
     return visited_set
-
+    
 def install_mod(filename):
     global factorio_path
     if not check_factorio_path_set():
